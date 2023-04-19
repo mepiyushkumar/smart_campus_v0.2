@@ -29,11 +29,11 @@ class Table extends React.Component {
         const counts = this.state.counts;
         const tableRows = [];
         let rec = 0;
-        let non_rec= 0;
+        let non_rec= 0; 
         
       for (let i = 0; i < counts.length; i++) {
         const count = counts[i];
-        if(count._id==="Bread" || count._id==="Cardboard"){
+        if(count._id==="Bread" || count._id==="CardBoard"){
           rec= rec+count.count;
         } else if(count._id==="Metal Can" || count._id==="Plastic Bag"){
           non_rec = non_rec+count.count ;
